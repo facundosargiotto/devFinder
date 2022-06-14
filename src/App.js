@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// Components
+import { Stack, Text } from "@chakra-ui/react";
+import BuscadorContainer from "./components/BuscadorContainer";
+
+// media
+import galaxia from "./media/galaxia.jfif"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Stack w="100vw" h="100vh" justifyContent="center" alignItems="center" bgImage={galaxia} bgRepeat="repeat" bgSize="auto" overflowX="hidden" direction="column">
+      <Stack w={{base: "100%", lg: "50%"}} alignItems="center">
+        <Text fontSize={{base: "6xl", lg: "8xl"}} fontFamily="'Fascinate', cursive">DEVFINDER</Text>
+      </Stack>
+      <Stack w={{base: "100%", lg: "50%"}} h={{base: "100%", lg: "60%"}}>
+        <BuscadorContainer />  
+      </Stack>
+    </Stack>
   );
 }
 
