@@ -4,7 +4,7 @@ A page where you can search for Github profiles, using Github API
 
 ## Deploy
 
-- Site is deployed in: 
+- Site is deployed in: https://devfinder-facundosargiotto.netlify.app/
 
 ## Dependencies
 
