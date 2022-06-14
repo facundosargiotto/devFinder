@@ -49,7 +49,7 @@ const Buscador = ({userPrompt}) => {
                         </Stack>
                     </Stack>
                 </Stack>
-                <Stack visibility={usuario.length === 30 ? "hidden" :  "visible"} direction="row" bg="rgba(0,0,0,0.2)" p={{base: 0, lg: "3rem"}} py={{base: "2rem"}} marginTop="3rem !important" justifyContent="space-between">
+                <Stack visibility={usuario.length === 30 ? "hidden" :  "visible"} direction="row" bg="rgba(0,0,0,0.2)" p={{base: 0, lg: "3rem"}} py={{base: "2rem"}} marginTop={{base: 0, lg: "3rem !important"}} justifyContent="space-between">
                     <Text fontSize={{base: "lg", lg: "xl"}} fontWeight="bold">Followers: {usuario.followers}</Text>
                     <Text fontSize={{base: "lg", lg: "xl"}} fontWeight="bold">Following: {usuario.following}</Text>
                     <Text fontSize={{base: "lg", lg: "xl"}} fontWeight="bold">Repos: {usuario.public_repos}</Text>
